@@ -1,0 +1,7 @@
+= simple_form_for article, url: url do |f|
+  = f.input :title
+  = image_tag article.image_url(:thumb) if article.image?
+  = f.input :image
+  = f.input :annotation
+  = f.input :content
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

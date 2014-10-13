@@ -1,0 +1,6 @@
+%legend
+  Изменить вакансию
+
+.row
+  .col-md-6
+    = render partial: 'admin/vacancies/form', locals: {vacancy: @vacancy, url: admin_vacancy_path(@vacancy)}

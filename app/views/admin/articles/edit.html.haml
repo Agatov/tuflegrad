@@ -1,0 +1,6 @@
+%legend
+  Изменить новость
+
+.row
+  .col-md-6
+    = render partial: 'admin/articles/form', locals: {article: @article, url: admin_article_path(@article)}

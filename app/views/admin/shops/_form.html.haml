@@ -1,0 +1,9 @@
+= simple_form_for shop, url: url do |f|
+  = f.input :name
+  = image_tag shop.image_url(:thumb) if shop.image?
+  = f.input :image
+  = f.input :phone
+  = f.input :address
+  = f.input :schedule_weekdays
+  = f.input :schedule_weekend
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

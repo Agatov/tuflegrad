@@ -24,7 +24,7 @@ class Admin::ShopsController < AdminController
   def update
     @shop = Shop.find params[:id]
 
-    if @shop.update_attributes shop_attributes
+    if @shop.update_attributes shop_params
       redirect_to admin_shops_path
     else
       render :edit

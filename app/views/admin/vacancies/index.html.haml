@@ -1,0 +1,22 @@
+%legend
+  Вакансии
+
+  %a.btn{href: new_admin_vacancy_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td Название
+      %td
+        = '...'
+
+  %tbody
+    - @vacancies.each do |vacancy|
+      %tr
+        %td
+          = vacancy.name
+
+        %td
+          = link_to 'редактировать', edit_admin_vacancy_path(vacancy)
+          = link_to 'удалить', admin_vacancy_path(vacancy), method: :delete, confirm: 'Удалить магазин?'

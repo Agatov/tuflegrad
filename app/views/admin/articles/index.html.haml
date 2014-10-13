@@ -2,3 +2,26 @@
   Новости и акции
 
   %a.btn{href: new_admin_article_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td
+        Заголовок
+      %td
+        Дата
+      %td
+        = '...'
+
+  %tbody
+    - @articles.each do |article|
+      %tr
+        %td
+          = article.title
+        %td
+          = article.created_at
+
+        %td
+          = link_to 'редактировать', edit_admin_article_path(article)
+          = link_to 'удалить', admin_article_path(article), method: :delete, confirm: 'Удалить статью?'

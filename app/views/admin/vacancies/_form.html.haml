@@ -1,0 +1,10 @@
+= simple_form_for vacancy, url: url do |f|
+  = f.input :name
+  = f.input :salary_min
+  = f.input :salary_max
+  = f.input :experience
+  = f.input :schedule
+  = f.input :description
+  = f.input :phone
+  = f.input :email
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

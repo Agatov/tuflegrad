@@ -1,0 +1,6 @@
+%legend
+  Редактировать магазин
+
+.row
+  .col-md-6
+    = render partial: 'admin/shops/form', locals: {shop: @shop, url: admin_shop_path(@shop)}
