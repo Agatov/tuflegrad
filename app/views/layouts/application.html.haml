@@ -1,0 +1,17 @@
+!!! 5
+%html
+  %head
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', :media => 'all'
+    = javascript_include_tag 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'
+    = javascript_include_tag 'application'
+
+
+    -#= set_meta_tags site: 'My Site'
+    %title
+      Туфлеград
+
+  %body
+    .wrapper
+      = render partial: 'layouts/topbar'
+      = yield

@@ -1,0 +1,215 @@
+@font-face
+  font-family: 'HelveticaNeue-Light'
+  src: url('/assets/HelveticaNeueCyr-Light.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Regular'
+  src: url('/assets/HelveticaNeueCyr-Roman.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Thin'
+  src: url('/assets/HelveticaNeueCyr-Thin.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-UltraLight'
+  src: url('/assets/HelveticaNeueCyr-UltraLight.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+body
+  padding: 0px
+  margin: 0px
+  font-family: 'HelveticaNeue-Light', 'Helvetica', 'Arial', sans-serif
+  min-width: 1150px
+  color: #4A4A4A
+
+.wrapper
+  width: 940px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.inheritance-height
+  height: 100%
+
+
+.topbar
+
+  .logo
+    float: left
+
+    img
+      width: 382px
+      height: 100px
+
+  .vk
+    float: right
+    margin-top: 40px
+    margin-left: 10px
+
+    img
+      width: 50px
+      height: 50px
+
+  .ok
+    float: right
+    margin-top: 40px
+    margin-left: 10px
+
+    img
+      width: 50px
+      height: 50px
+
+
+  .adresses-and-phones
+    float: right
+
+    margin-top: 40px
+    width: 270px
+    height: 50px
+
+    line-height: 50px
+    text-align: center
+
+    background: #F02F72
+    color: #fff
+
+    font-family: 'HelveticaNeue-Thin'
+    font-size: 16px
+
+    cursor: pointer
+
+    &:hover
+      background: #fff
+      border: 1px solid #F02F72
+      color: #F02F72
+
+
+.navbar
+  width: 100%
+  height: 50px
+  background: #494A53
+  .nav
+    height: 50px
+    margin-left: 40px
+    line-height: 50px
+
+    li
+      display: inline
+      margin-right: 40px
+
+
+      a
+        font-size: 15px
+        color: #fff
+        text-decoration: underline
+
+        &.active
+          text-decoration: none
+
+
+.breadcrumbs
+  width: 100%
+  height: 50px
+  line-height: 50px
+  margin-top: 20px
+  font-family: 'HelveticaNeue-Light'
+  font-size: 14px
+  color: #AAB2AA
+
+  a
+    font-family: 'HelveticaNeue-Light'
+    font-size: 14px
+    color: #AAB2AA
+    text-decoration: underline
+
+
+
+.slider
+  margin-top: 50px
+
+  img
+    width: 940px
+    height: 360px
+
+
+
+
+.title
+  width: 100%
+  height: 50px
+  line-height: 50px
+  margin-top: 50px
+
+  font-size: 32px
+  color: #4A4A4A
+
+
+.main-page
+  margin-top: 30px
+  .content
+    float: left
+    width: 540px
+
+  .news-block
+    float: right
+    width: 300px
+
+    .articles-column
+      .article
+        margin-bottom: 30px
+        .date
+          font-size: 14px
+          color: #4A4A4A
+          padding-right: 10px
+
+        a
+          font-size: 16px
+          text-decoration: underline
+          line-height: 22px
+          color: #4A90E2
+
+.text
+  p
+    font-size: 15px
+    line-height: 21px
+    color: #4A4A4A
+    margin-bottom: 25px
+
+    &:nth-child(last)
+      margin-bottom: 0px
+
+
+
+#map
+  margin-top: 50px
+  width: 940px
+  height: 480px
+  background: #f7f7f7
+
+
+#footer
+  padding: 50px 0
+  .line
+  .footer-content
+    width: 940px
+    margin-top: 30px 0px
+    font-size: 14px
+    line-height: 1.3
+

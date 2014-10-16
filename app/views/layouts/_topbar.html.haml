@@ -1,0 +1,29 @@
+.topbar.clearfix
+  .logo
+    = image_tag 'logo.png'
+
+  .ok
+    = image_tag 'ok.png'
+
+  .vk
+    = image_tag 'vk.png'
+
+  .adresses-and-phones
+    Адреса и телефоны магазинов
+
+
+
+.navbar
+  %ul.nav
+    %li
+      %a.active{href: '#'} Главная страница
+
+
+    %li
+      = link_to 'Новости и акции', articles_path
+
+    %li
+      = link_to 'Вакансии', vacancies_path
+
+    %li
+      %a{href: '#'} Отзывы
