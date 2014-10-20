@@ -1,0 +1,27 @@
+.title Книга отзывов и предложений
+
+.comments-block
+  .comments
+
+    - @comments.each do |comment|
+      .comment
+        .name
+          = @comment.name
+          %span.date
+            = comment.created_at.strftime('%d.%m.%Y')
+
+        .content
+          = comment.content.gsub("\n", "<br />").html_safe
+
+
+
+  .right
+    .form-block
+      .form-offer
+        Нам очень важно знать ваше мнение, поделитесь им!
+
+
+      .form
+        %input{type: :text, name: :name, placeholder: 'Введите ваше имя'}
+        %textarea{name: :content, placholder: 'Напишите ваш отзыв тут'}
+        .button Откликнуться на вакансию

@@ -1,0 +1,26 @@
+.shops.clearfix
+  - shops.each do |shop|
+    .shop
+      .img
+        = image_tag shop.image_url(:thumb)
+
+      .contacts
+
+        .name
+          = shop.name
+
+        .contact-name Телефон:
+        .phone
+          = shop.phone
+
+        .contact-name Адрес:
+        .address
+          = shop.address
+
+        .contact-name Режим работы:
+        .schedule
+          В будни:
+          = shop.schedule_weekdays
+          %br
+          В выходные:
+          = shop.schedule_weekend

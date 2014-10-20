@@ -24,3 +24,7 @@
         %li{class: params[:controller] == 'admin/vacancies' ? 'active' : ''}
           %a{href: admin_vacancies_path}
             Вакансии
+
+        %li{class: params[:controller] == 'admin/settings' ? 'active' : ''}
+          %a{href: edit_admin_setting_path}
+            Настройки

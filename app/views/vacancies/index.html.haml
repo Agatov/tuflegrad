@@ -1,83 +1,33 @@
 .title Вакансии сети магазинов «Туфлеград»
 
 
+
+
+
 .vacancies
-  .vacancy
-    .name
-      Уборщица
-    .salary
-      Заработная плата:
-      .value
-        от 20 000 до 25 000 рублей
 
-    .more
-      График работы:
-      %strong
-        2/2
-      %br
-      Опыт работы:
-      %strong
-        не требуется
+  - @vacancies.each do |vacancy|
 
-    %a{href: '#'} Читать полное описание вакансии
+    .vacancy
+      .name
+        = vacancy.name
+      .salary
+        Заработная плата:
+        .value
+          от
+          = vacancy.salary_min.to_s
+          до
+          = vacancy.salary_max.to_s
+          рублей
 
+      .more
+        График работы:
+        %strong
+          = vacancy.schedule
+        %br
+        Опыт работы:
+        %strong
+          = vacancy.experience
 
-
-  .vacancy
-    .name
-      Уборщица
-    .salary
-      Заработная плата:
-      .value
-        от 20 000 до 25 000 рублей
-
-    .more
-      График работы:
-      %strong
-        2/2
-      %br
-      Опыт работы:
-      %strong
-        не требуется
-
-    %a{href: '#'} Читать полное описание вакансии
-
-
-  .vacancy
-    .name
-      Уборщица
-    .salary
-      Заработная плата:
-      .value
-        от 20 000 до 25 000 рублей
-
-    .more
-      График работы:
-      %strong
-        2/2
-      %br
-      Опыт работы:
-      %strong
-        не требуется
-
-    %a{href: '#'} Читать полное описание вакансии
-
-
-  .vacancy
-    .name
-      Уборщица
-    .salary
-      Заработная плата:
-      .value
-        от 20 000 до 25 000 рублей
-
-    .more
-      График работы:
-      %strong
-        2/2
-      %br
-      Опыт работы:
-      %strong
-        не требуется
-
-    %a{href: '#'} Читать полное описание вакансии
+      %a{href: '#'}
+      = link_to 'Читать полное описание вакансии', vacancy_path(vacancy)

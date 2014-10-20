@@ -14,11 +14,7 @@ class ArticleImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :thumb do
-    process :resize_to_fit => [220, 80]
-  end
-
-  version :mini do
-    process :resize_to_fit => [110, 40]
+    process :resize_to_fit => [140, 90]
   end
 
   def extension_white_list
