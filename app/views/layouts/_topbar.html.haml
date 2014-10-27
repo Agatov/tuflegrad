@@ -1,14 +1,17 @@
 .topbar.clearfix
   .logo
-    = image_tag 'logo.png'
+    %a{href: root_path}
+      = image_tag 'logo.png'
 
   .ok
-    = image_tag 'ok.png'
+    %a{href: 'http://www.odnoklassniki.ru/group/52035652419737', target: '_blank'}
+      = image_tag 'ok.png'
 
   .vk
-    = image_tag 'vk.png'
+    %a{href: 'http://vk.com/public78083745', target: '_blank'}
+      = image_tag 'vk.png'
 
-  .adresses-and-phones
+  %a.adresses-and-phones.show-shops{href: '/#shops'}
     Адреса и телефоны магазинов
 
 
@@ -26,4 +29,4 @@
       = link_to 'Вакансии', vacancies_path
 
     %li
-      %a{href: '#'} Отзывы
+      = link_to 'Отзывы', comments_path

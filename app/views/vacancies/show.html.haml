@@ -1,10 +1,18 @@
+.modal-overlay
+.modal
+  .name Спасибо за отклик
+  .content
+    Наш менеджер по персоналу свяжется с вами в ближайшее время.
+
 .breadcrumbs
-  = link_to 'Новости и акции', articles_path
+  = link_to 'Вакансии', vacancies_path
   = ' / '
   Просмотр вакансии
 
 .title{style: 'margin-top: 0px; height: auto; margin-bottom: 20px'}
-  Вакансия «Уборщица» в сеть магазинов «Туфлеград»
+  Вакансия
+  = "«#{@vacancy.name}»"
+  в сеть магазинов «Туфлеград»
 
 .vacancy-bar
   .bullet
@@ -45,7 +53,7 @@
       .form
         %input{type: :text, name: :name, placeholder: 'Введите ваше имя'}
         %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
-        .button Откликнуться на вакансию
+        .button.submit-vacancy Откликнуться на вакансию
 
 
 

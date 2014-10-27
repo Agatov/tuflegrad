@@ -8,5 +8,6 @@ class VacanciesController < ApplicationController
   end
 
   def reply
+    render json: {status: :ok}
   end
 end

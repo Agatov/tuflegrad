@@ -1,12 +1,19 @@
+.modal-overlay
+.modal
+  .name Спасибо за отзыв
+  .content
+    Ваш отзыв появится на сайте сразу после прохождения модерации.
+
+
 .title Книга отзывов и предложений
 
-.comments-block
+.comments-block.clearfix
   .comments
 
     - @comments.each do |comment|
       .comment
         .name
-          = @comment.name
+          = comment.name
           %span.date
             = comment.created_at.strftime('%d.%m.%Y')
 
@@ -24,4 +31,4 @@
       .form
         %input{type: :text, name: :name, placeholder: 'Введите ваше имя'}
         %textarea{name: :content, placholder: 'Напишите ваш отзыв тут'}
-        .button Откликнуться на вакансию
+        .button.submit-comment Отправить отзыв

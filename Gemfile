@@ -61,3 +61,4 @@ gem 'meta-tags'
 gem 'russian'
 
 gem 'pony'
+gem 'geocoder'
