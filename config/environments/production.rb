@@ -62,6 +62,7 @@ Tuflegrad::Application.configure do
   # config.assets.precompile += %w( search.js )
 
   config.assets.precompile += %w( admin.css admin.js )
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)\z/
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
