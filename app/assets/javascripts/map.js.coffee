@@ -1,4 +1,8 @@
 $ ->
+
+  console.log 'map map map!!!'
+
+  
   waitForMap ->
 
     #http://geocode-maps.yandex.ru/1.x/?geocode=OLOLOLO
