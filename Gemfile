@@ -59,7 +59,7 @@ gem 'russian'
 
 gem 'pony'
 gem 'geocoder'
-# gem 'mysql2'
+gem 'mysql2', group: :production
 
 gem 'capistrano', '~> 2.14.2', group: :development
 gem 'wysiwyg-rails'
