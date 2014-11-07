@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bxslider
-//= require_tree .
+//= require initializer
+//= require form
+//= require vacancy
+//= map
