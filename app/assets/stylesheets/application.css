@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bxslider
  *= require reset
  *= require index
  *= require shops
@@ -17,4 +16,5 @@
  *= require vacancies
  *= require comments
  *= require modal
+ *= require bxslider
  */
