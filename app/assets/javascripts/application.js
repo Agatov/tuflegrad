@@ -16,4 +16,4 @@
 //= require initializer
 //= require form
 //= require vacancy
-//= map
+//= require map
