@@ -1,0 +1,33 @@
+%legend
+  Комментарии
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td
+        Автор
+      %td
+        Текст
+      %td
+        Статус
+      %td
+        = '...'
+
+  %tbody
+    - @comments.each do |comment|
+      %tr
+        %td
+          = comment.name
+        %td
+          = comment.content
+        %td
+          - if comment.moderated?
+            %span.label.label-success Опубликовано
+          - else
+            %span.label.label-warning Ожидает модерации
+        %td
+          - unless comment.moderated?
+            = link_to 'Одобрить', approve_admin_comment_path(comment), class: ['btn', 'btn-success']
+          = link_to 'Ответить', admin_comment_path(comment), class: ['btn', 'btn-primary']
+          = link_to 'Удалить', admin_comment_path(comment), method: :delete, confirm: 'Удалить?', class: ['btn', 'btn-danger']

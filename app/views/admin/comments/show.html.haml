@@ -1,0 +1,8 @@
+%legend
+  Комментарий
+
+.jumbotron
+  %p
+    = @comment.content
+
+  = render partial: 'admin/comments/form', locals: {comment: @comment, url: admin_comment_path(@comment)}

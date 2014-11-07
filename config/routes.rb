@@ -7,6 +7,9 @@ Tuflegrad::Application.routes.draw do
     resources :articles
     resources :shops
     resources :vacancies
+    resources :comments do
+      get :approve, on: :member
+    end
     resource :setting
   end
 

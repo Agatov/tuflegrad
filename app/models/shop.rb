@@ -5,7 +5,7 @@ class Shop < ActiveRecord::Base
   after_validation :geocode
 
   def full_street_address
-    I18n.t 'full_address', {adress: address}
+    I18n.t 'full_address', {address: address}
   end
 
 

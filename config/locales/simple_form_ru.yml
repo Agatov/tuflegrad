@@ -1,0 +1,47 @@
+ru:
+  simple_form:
+    "yes": 'Да'
+    "no": 'Нет'
+    required:
+      text: 'Обязательно'
+      mark: '<i style="color: red; font-size: 16px">*</i>'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "При заполнении формы допущены ошибки, проверьте:"
+    labels:
+      article:
+        title: 'Заголовок'
+        image: 'Изображение'
+        annotation: 'Аннотация'
+        content: 'Текст целиком'
+
+      comment:
+        name: 'Имя'
+        content: 'Текст'
+        reply: 'Ответ'
+        moderated: 'Прошел модерацию'
+
+      settings:
+        about_company: 'Текст о компании'
+
+
+      shop:
+        name: 'Название'
+        image: 'Изображение'
+        address: 'Адрес'
+        phone: 'Телефон'
+        schedule_weekdays: 'Режим работы в будни'
+        schedule_weekend: 'Режим работы в выходные'
+
+      vacancy:
+        name: 'Название'
+        salary_min: 'Зарплата от'
+        salary_max: 'Зарплата до'
+        experience: 'Требуемый опыт'
+        schedule: 'График работы'
+        description: 'Описание'
+        phone: 'Телефон'
+        email: 'Email'
+

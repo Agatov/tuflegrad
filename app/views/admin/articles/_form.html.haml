@@ -3,5 +3,5 @@
   = image_tag article.image_url(:thumb) if article.image?
   = f.input :image
   = f.input :annotation
-  = f.input :content
+  = f.input :content, input_html: {id: :edit}
   = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

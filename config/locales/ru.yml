@@ -1,0 +1,8 @@
+ru:
+  full_address: "Ухта, %{address}"
+
+  project:
+  	vacancy_reply_title: "Новый отклик на вакансию %{vacancy_name}"
+  	vacancy_reply_messae: "Имя: %{name}, Телефон: %{phone}"
+  	new_comment_title: "Добавлен новый комментарий"
+  	new_comment_message: "Вы можете одобрить его по ссылке <a href:'%{url}'>Модерация комментария</a>"
