@@ -53,7 +53,7 @@
       .form
         %input{type: :text, name: :name, placeholder: 'Введите ваше имя'}
         %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
-        .button.submit-vacancy Откликнуться на вакансию
+        .button.submit-vacancy{vacancy_id: @vacancy.id.to_s} Откликнуться на вакансию
 
 
 

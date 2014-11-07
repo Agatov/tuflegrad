@@ -36,6 +36,7 @@ GEM
     arel (4.0.2)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
+    bxslider-rails (4.1.0)
     capistrano (2.14.2)
       highline
       net-scp (>= 1.0.0)
@@ -168,6 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   breadcrumbs_on_rails
+  bxslider-rails
   capistrano (~> 2.14.2)
   carrierwave
   coffee-rails (~> 4.0.0)

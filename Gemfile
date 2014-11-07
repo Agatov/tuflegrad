@@ -66,3 +66,5 @@ gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
 
 gem 'pony'
+
+gem 'bxslider-rails'

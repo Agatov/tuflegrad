@@ -19,7 +19,7 @@ $ ->
       return false
 
     $.post(
-      '/vacancies/reply.json',
+      "/vacancies/#{$(@).attr('vacancy_id')}/reply.json",
     {
       'order[name]': name.val(),
       'order[phone]': phone.val()

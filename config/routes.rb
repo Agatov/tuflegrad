@@ -14,7 +14,9 @@ Tuflegrad::Application.routes.draw do
   end
 
   resources :articles
-  resources :vacancies
+  resources :vacancies do
+    post :reply, on: :member
+  end
   resources :comments
 
 end
