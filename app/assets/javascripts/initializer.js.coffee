@@ -4,4 +4,4 @@ $ ->
     $('body').animate({scrollTop: "#{$(".shops-title").offset().top}px"}, 300)
     false
 
-  $(".bxslider").bxSlider()
+  $(".bxslider").bxSlider({auto: true})
