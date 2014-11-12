@@ -1,6 +1,6 @@
 .shops.clearfix
   - shops.each do |shop|
-    .shop{lat: shop.latitude, lng: shop.longitude}
+    .shop{lat: shop.latitude, lng: shop.longitude, name: shop.name}
       .img
         = image_tag shop.image_url(:thumb)
 

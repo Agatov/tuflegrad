@@ -24,7 +24,7 @@ window.add_placemark = (map, shop) ->
   placemark = new ymaps.Placemark(
     [parseFloat($(shop).attr('lat')), parseFloat($(shop).attr('lng'))],
   {
-    balloonContent: 'Туфлеград'
+    balloonContent: $(shop).attr('name')
   }
   )
 

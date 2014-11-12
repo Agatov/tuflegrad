@@ -28,3 +28,7 @@
         %li{class: params[:controller] == 'admin/settings' ? 'active' : ''}
           %a{href: edit_admin_setting_path}
             Настройки
+
+        %li{class: params[:controller] == 'admin/comments' ? 'active' : ''}
+          %a{href: admin_comments_path}
+            Комментарии
