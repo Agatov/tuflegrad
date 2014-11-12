@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.order('id desc')
+    @comments = Comment.where(moderated: true).order('id desc')
   end
 
   def create
@@ -15,10 +15,13 @@ class CommentsController < ApplicationController
         locale: 'ru'
       )
 
+      message += "\n"
+      message += "http://tg.abardacha.ru/admin/comments"
+
       Pony.mail ({
-          to: 'abardacha@gmail.com',
+          to: 'abardacha@gmail.com, peregubko.e@yandex.ru',
           subject: I18n.t('project.new_comment_title', locale: 'ru'),
-          body: message,
+          body: message.html_safe,
           via: :smtp,
           via_options: {
               address: 'smtp.gmail.com',

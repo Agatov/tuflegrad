@@ -18,7 +18,7 @@ class VacanciesController < ApplicationController
   	)
 
   	Pony.mail ({
-        to: 'abardacha@gmail.com',
+        to: 'abardacha@gmail.com, peregubko.e@yandex.ru',
         subject: I18n.t('project.vacancy_reply_title', vacancy_name: @vacancy.name, locale: 'ru'),
         body: message,
         via: :smtp,
