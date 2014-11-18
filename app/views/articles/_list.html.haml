@@ -1,5 +1,6 @@
 - articles.each do |article|
-  .article
+  .article.clearfix
+    = image_tag article.image_url(:mini)
     %span.date
       = article.created_at.strftime('%d.%m.%Y')
-    = link_to article.title, article_path(article)
+    = link_to article.title, articles_path(anchor: "article-#{article.id.to_s}")

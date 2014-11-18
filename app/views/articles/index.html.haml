@@ -2,17 +2,29 @@
 
 .articles
   - @articles.each do |article|
-    .article
-      .top.clearfix
+    .article.clearfix{id: "article-#{article.id.to_s}"}
+
+      = image_tag article.image_url(:thumb), float: :left
+      %h1
+        = article.title
+        %small
+          = article.created_at.strftime('%d.%m.%Y')
+
+      = article.content.html_safe
+
+
+
+      -# .top.clearfix
         .image
           = image_tag article.image_url(:thumb)
         .right
-          .date
+          -#.date
             = article.created_at.strftime('%d.%m.%Y')
           .title
-            = link_to article.title, article_path(article)
+            = article.title
+            -#= link_to article.title, article_path(article)
 
-        .content
-          = article.annotation
+      -#  .content
+          = article.content.html_safe
 
-        = link_to 'Читать далее', article_path(article), class: 'read-more'
+        -#= link_to 'Читать далее', article_path(article), class: 'read-more'
