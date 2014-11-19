@@ -68,3 +68,4 @@ gem 'font-awesome-rails'
 gem 'pony'
 
 gem 'bxslider-rails'
+gem 'net-ssh', '~>2.7.0'
