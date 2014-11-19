@@ -61,11 +61,11 @@ gem 'pony'
 gem 'geocoder'
 gem 'mysql2', group: :production
 
-gem 'capistrano', '~> 2.14.2', group: :development
+gem 'net-ssh', '~>2.7.0'
+gem 'capistrano', '~> 2.15.5', group: :development
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
 
 gem 'pony'
 
 gem 'bxslider-rails'
-gem 'net-ssh', '~>2.7.0'
