@@ -40,7 +40,7 @@
     .name Описание вакансии
     .text
       %p
-        = @vacancy.description
+        = @vacancy.description.gsub("\n", "<br />").html_safe
 
   .right
     .form-block

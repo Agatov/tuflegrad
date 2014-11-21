@@ -20,6 +20,11 @@
         .content
           = comment.content.gsub("\n", "<br />").html_safe
 
+          - if comment.reply?
+            .reply
+              .admin Ответ администрации
+              = comment.reply
+
 
 
   .right
