@@ -59,7 +59,7 @@ gem 'russian'
 
 gem 'pony'
 gem 'geocoder'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 
 gem 'net-ssh', '~>2.7.0'
 gem 'capistrano', '~> 2.15.5', group: :development
