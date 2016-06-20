@@ -1,0 +1,6 @@
+%legend
+  Добавить баннер
+
+.row
+  .col-md-12
+    = render partial: 'admin/banners/form', locals: {banner: @banner, url: admin_banners_path}

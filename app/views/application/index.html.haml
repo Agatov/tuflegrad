@@ -1,11 +1,8 @@
 .slider
   %ul.bxslider
-    %li
-      = image_tag 'banner1.png'
-    %li
-      = image_tag 'banner2.png'
-    %li
-      = image_tag 'banner3.png'
+    - @banners.each do |banner|
+      %li
+        = image_tag banner.image_url(:full)
 
 
 .title

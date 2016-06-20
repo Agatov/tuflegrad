@@ -16,6 +16,10 @@
           %a{href: admin_articles_path}
             Новости
 
+        %li{class: params[:controller] == 'admin/banners' ? 'active' : ''}
+          %a{href: admin_banners_path}
+            Баннеры
+
         %li{class: params[:controller] == 'admin/shops' ? 'active' : ''}
           %a{href: admin_shops_path}
             Магазины

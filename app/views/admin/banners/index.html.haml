@@ -1,0 +1,25 @@
+%legend
+  Магазины
+
+  %a.btn{href: new_admin_banner_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td Название
+      %td Дата загрузки
+      %td ...
+
+
+  %tbody
+    - @banners.each do |banner|
+      %tr
+        %td
+          = banner.name
+        %td
+          = banner.created_at.strftime("%d.%m.%Y")
+
+        %td
+          = link_to 'редактировать', edit_admin_banner_path(banner)
+          = link_to 'удалить', admin_banner_path(banner), method: :delete, confirm: 'Удалить этот баннер?'

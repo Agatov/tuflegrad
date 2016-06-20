@@ -17,6 +17,10 @@ ru:
         annotation: 'Аннотация'
         content: 'Текст целиком'
 
+      banner:
+        name: 'Название'
+        image: 'Изображение'
+
       comment:
         name: 'Имя'
         content: 'Текст'

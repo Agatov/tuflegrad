@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
     @shops = Shop.order(:id)
     @articles = Article.order('id desc').limit(5)
     @settings = Settings.first()
+    @banners = Banner.order("id desc")
   end
 end

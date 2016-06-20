@@ -1,0 +1,5 @@
+= simple_form_for banner, url: url do |f|
+  = f.input :name
+  = image_tag banner.image_url(:full) if banner.image?
+  = f.input :image
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

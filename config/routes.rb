@@ -6,6 +6,7 @@ Tuflegrad::Application.routes.draw do
   namespace :admin do
     resources :articles
     resources :shops
+    resources :banners
     resources :vacancies
     resources :comments do
       get :approve, on: :member
